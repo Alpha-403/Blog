@@ -1,5 +1,5 @@
 from datetime import datetime
-from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+from itsdangerous import TimedSerializer as Serializer
 from FlaskBlog import db, login_manager, app
 from flask_login import UserMixin
 
