@@ -4,6 +4,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
 from FlaskBlog.config import Config
+from flask_migrate import Migrate
 
 
 db = SQLAlchemy()
@@ -21,6 +22,7 @@ def create_app(config_class=Config):
     db.init_app(app)
     bcrypt.init_app(app)
     login_manager.init_app(app)
+    migrate = Migrate(app, db)
     mail.init_app(app)
 
     from FlaskBlog.users.routes import users
