@@ -1,11 +1,10 @@
 import os
 import secrets
 from PIL import Image
-from flask import url_for
+from flask import url_for, current_app
 from flask_mail import Message
 from FlaskBlog import mail
 from FlaskBlog.config import Config
-from flask import current_app
 
 path = 'static/profile_pics'
 
