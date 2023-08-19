@@ -1,9 +1,32 @@
- body {
+body {
   background: #fafafa;
   color: #333333;
   margin-top: 5rem;
 }
 
+/* Add dark mode styles */
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Adjust post block background color */
+.content-section {
+  background: #f2f2f2; /* Change this color as needed */
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+/* Ensure post content remains black in dark mode */
+.content-section,
+.article-title,
+.article-content {
+  color: #000000; /* Set text color to black */
+}
+
+/* Continue with your existing styles */
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
 }
@@ -24,13 +47,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-.content-section {
-  background: #ffffff;
-  padding: 10px 20px;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  margin-bottom: 20px;
-}
+/* ... rest of your styles ... */
+
 
 .article-title {
   color: #444444;
